@@ -9,10 +9,6 @@ function App() {
           base: `"nav" "main"`,
           lg: `"nav nav"  "aside main"`,
         }}
-        h="100px"
-        gap="1"
-        color="blackAlpha.700"
-        fontWeight="bold"
       >
         <GridItem area={"nav"}>
           <NavBar />
