@@ -15,17 +15,14 @@ function App() {
         fontWeight="bold"
       >
         <GridItem area={"nav"}>
-          {/* <HStack> */}
           <NavBar />
-
-          {/* </HStack> */}
         </GridItem>
         <Show above="lg">
           <GridItem bg="yellow.300" area={"aside"}>
             Aside
           </GridItem>
         </Show>
-        <GridItem pl="100px" area={"main"}>
+        <GridItem area={"main"}>
           <GameGrid />
         </GridItem>
       </Grid>
