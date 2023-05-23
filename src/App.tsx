@@ -1,4 +1,4 @@
-import { Grid, GridItem, Show } from "@chakra-ui/react";
+import { Grid, GridItem, Show, HStack } from "@chakra-ui/react";
 import NavBar from "./components/NavBar";
 function App() {
   return (
@@ -8,15 +8,16 @@ function App() {
           base: `"nav" "main"`,
           lg: `"nav nav"  "aside main"`,
         }}
-        //gridTemplateRows={"50px 1fr 30px"}
-        //gridTemplateColumns={"150px 1fr"}
         h="100px"
         gap="1"
         color="blackAlpha.700"
         fontWeight="bold"
       >
         <GridItem area={"nav"}>
+          {/* <HStack> */}
           <NavBar />
+
+          {/* </HStack> */}
         </GridItem>
         <Show above="lg">
           <GridItem bg="yellow.300" area={"aside"}>
